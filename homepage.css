@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Shantell+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;  
+}
+
+body{
+    background-color: #FFF;
+}
+
+header{
+    background-image: url(https://lh3.googleusercontent.com/pw/AMWts8B9Y92DUuPTwv9bfU3PVBxcKS9EDt93BOUhUaz4P-q69yaCwQhPQAuwlgNx6XqVfibu6nCXSLMATE_zx2H9s03MF_miTXhu4nXCrjD3drc5ROtJjQg=w2400);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header{
+    background-color: #FFF;
+    padding-bottom: 50px;
+}
+
+.register{
+	text-decoration: none;	
+	color: rgba(0, 0, 0, 0.8);
+	font-family: 'Poppins', sans-serif;
+	font-size: 38px;
+	position: absolute;
+	top: 25%;
+	left: 13%;
+}
+
+.author{
+	text-decoration: none;	
+	color: rgba(0, 0, 0, 0.8);
+	font-family: 'Poppins', sans-serif;
+	font-size: 38px;
+	position: absolute;
+	top: 25%;
+	left: 62.5%;
+}
+
+.what{
+	text-decoration: none;	
+	color: rgba(0, 0, 0, 0.8);
+	font-family: 'Poppins', sans-serif;
+	font-size: 38px;
+	position: absolute;
+	top: 58%;
+	left: 13%;
+}
+
+.why{
+	text-decoration: none;	
+	color: rgba(0, 0, 0, 0.8);
+	font-family: 'Poppins', sans-serif;
+	font-size: 38px;
+	position: absolute;
+	top: 58%;
+	left: 31.5%;
+}
+
+.ref{
+	text-decoration: none;	
+	color: rgba(0, 0, 0, 0.8);
+	font-family: 'Poppins', sans-serif;
+	font-size: 38px;
+	position: absolute;
+	top: 58%;
+	left: 62.5%;
+}
+  
+/* Flipping Cards */
+.wrapper, .single-card {
+	height: 600px;
+	max-width: 300px;
+	margin: auto;
+	position: relative;
+}
+
+.wrapper {
+	perspective: 900px;
+	margin-bottom: 75px;
+	padding-top: 180px;
+}
+
+.single-card {
+	text-align: center;
+	transition: all 1.5s cubic-bezier(0.7, -0.5, 0.7, 1.3);
+	transform-style: preserve-3d;
+}
+
+.first-card{
+    position: absolute;
+    left: 60%;
+}
+
+.second-card{
+    position: absolute;
+    right: 130%;
+}
+
+.wrapper:hover .single-card {
+	transform: rotateX(180deg);
+}
+
+.front, .back {
+	width: 500px;
+	position: relative;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.front {
+	cursor: pointer;
+	height: 100%;
+	background-image: url(1.jpg);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 50px;
+	background-size: cover;
+	background-position: center center;
+    background: linear-gradient(#ffdcf4, #dabfde, #c1bbdd,lightblue);
+}
+
+.back {
+	font-family: 'Poppins', sans-serif;
+	transform: rotateX(180deg);
+	position: absolute;
+	border-radius: 50px;
+	height: 600px;
+	background: linear-gradient(lightblue, #c1bbdd, #dabfde, #ffdcf4);
+}
+
+.content {
+	padding-top: 10%;
+}
+
+.content h2 {
+	font-size: 35px;
+	margin: 10px;
+	font-weight: 300;
+}
+
+.content h4 {
+	margin: 10px;
+}
+
+.content p {
+	text-align: justify;
+	margin: 30px;
+	font-size: 18px;
+}
+
+/* Flipping Cards */
+
+.refcard{
+	width: 1462px;
+	height: 460px;
+	background: linear-gradient(lightblue, #c1bbdd, #dabfde, #ffdcf4);
+	margin-left: 220px;
+	margin-right: 500px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	margin-top: 480px;
+}
+
+.refcard h1{
+	margin-left: 20px;
+	padding-top: 15px;
+}
+
+.content{
+	padding: 0;
+	margin: 0;
+	margin-top: 30px;
+}
+
+.refcard h6{
+	margin-left: 55px;
+	padding: 10px;
+}

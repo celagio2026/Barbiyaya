@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Shantell+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+body{
+    background-image: url(https://www.dealfuel.com/wp-content/uploads/2021/01/16-1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.wrapper{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+}
+
+.registration_form{
+    border-radius: 25px;
+    width: 1000px;
+    background: linear-gradient(#ffdcf4, #dabfde, #c1bbdd,lightblue);
+    margin-top: 5px;
+    padding: 25px;
+}
+
+.form_wrap .input_wrap{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form_wrap .input_wrap:last-child{
+    margin-bottom: 0;
+}
+
+.form_wrap .input_wrap label{
+    color: #1a1a1f;
+    display: block;
+}
+
+.form_wrap .input_grp{
+    display: flex;
+    justify-content: space-between;
+}
+  
+/* Whole Sex Choice CSS */
+.form_wrap ul{
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(220, 220, 220);
+    width: 100%;
+    background: rgb(255, 255, 255);
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+    
+}
+
+.form_wrap ul .radio_wrap{
+    position: relative;
+    margin-bottom: 0;
+}
+
+/* Main Choices CSS (fix position and format) */
+.form_wrap ul .radio_wrap .input_radio{
+position: absolute;
+top: 0;
+right: 0;
+opacity: 0;
+}
+
+/* Main Choices CSS */
+.form_wrap ul .radio_wrap span{
+display: inline-block;
+font-size: 17px;
+padding: 2.5px 20px;
+border-radius: 15px;
+color: black;
+}
+
+/* Sex Identifier Clicker Thingy */
+.form_wrap .input_radio:checked ~ span{
+background: #ED5C9B;
+color:white;
+}
+
+.reasons{
+    padding-bottom: 2px;
+}
+
+/* Submit Button */
+.form_wrap .submit_btn{
+font-size:17px;
+border-radius: 5px;
+text-transform: uppercase;
+letter-spacing: 2px;
+cursor: pointer;
+width: 100%;
+background: #E0218A;
+padding: 10px;
+border: 0;
+color:white;
+}
+/* Button Hover effect */
+.form_wrap .submit_btn:hover{
+    background: #f18dbc;
+}
+
+.fullname, .emailadd, .sex, .grade, .reasons{
+    font-weight: 600;
+}
+
+.emaildiv, .sexdiv, .gradesdiv, .reasonsdiv{
+    padding-top: 10px;
+}
+
+.namediv{
+    padding-top: 30px;
+}
+
+.barbiyaya{
+    height: 75px;
+    width: 260.38px;
+    position: absolute;
+    left: 43.1%;
+    top: 15.2%;
+}
